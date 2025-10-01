@@ -37,7 +37,7 @@ import {
   isHTMLElement,
 } from './LexicalUtils';
 // The time between a text entry event and the mutation observer firing.
-const TEXT_MUTATION_VARIANCE = 100;
+const TEXT_MUTATION_VARIANCE = 300;
 
 let isProcessingMutations = false;
 let lastTextEntryTimeStamp = 0;
