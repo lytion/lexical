@@ -13,6 +13,7 @@
   },
   "engineStrict": true,
   "scripts": {
+    "prepublish": "npm run build",
     "start:example": "sh -c '(cd \"examples/$0\"; npm i && npm run monorepo:dev)'",
     "start": "cross-env NODE_ENV=development concurrently \"npm:collab\" \"npm run dev --prefix packages/lexical-playground\"",
     "start:website": "npm run start --prefix packages/lexical-website -- --port 3001",
